@@ -15,6 +15,12 @@
             android:name=".MensajesGrupales"
             android:exported="true" />
         <activity
+            android:name=".MensajesDer"
+            android:exported="true" />
+        <activity
+            android:name=".MensajesIzq"
+            android:exported="true" />
+        <activity
             android:name=".InicioActivity"
             android:exported="true" />
         <activity

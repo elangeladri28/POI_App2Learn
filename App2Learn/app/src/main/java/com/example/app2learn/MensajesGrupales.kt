@@ -6,6 +6,6 @@ import android.os.Bundle
 class MensajesGrupales : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mensajes_grupales)
+        setContentView(R.layout.mensajes_toolbar)
     }
 }
