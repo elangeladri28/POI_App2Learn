@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,13 +14,21 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn_login).setOnClickListener {
 
 
-            val intent = Intent(this, InicioActivity::class.java)
-            startActivity(intent)
+            val username = findViewById<EditText>(R.id.txt_Username).text.toString()
+            if(username.isNotEmpty()){
+                val intent = Intent(this, MensajesGrupales::class.java)
+                intent.putExtra("username", username)
+                startActivity(intent)
+
+
+
+            }
+
+            else{
+
+            }
 
 
         }
     }
-
-
-
 }
